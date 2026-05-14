@@ -23,7 +23,7 @@ export default async function handler(req, res) {
       apiUrl = `http://147.135.212.197/crapi/had/viewstats?token=${token}&records=100000`;
     } else {
       // Default to viewstats
-      apiUrl = `http://147.135.212.197/crapi/st/viewstats?token=${token}`;
+      apiUrl = `http://147.135.212.197/crapi/st/viewstats?token=${token}&records=100000`;
     }
 
     const response = await fetch(apiUrl, {
